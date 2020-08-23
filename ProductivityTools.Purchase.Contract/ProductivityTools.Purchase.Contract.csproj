@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.0.1</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Contract to be used by external applications to the ProductivityTools.Purchase.Api</Description>
+    <PackageIcon>ProductivityTools_blue_85px_1.png</PackageIcon>
+    <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.Purchase.Contract</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Images\Nuget\ProductivityTools_blue_85px_1.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
