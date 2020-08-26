@@ -13,7 +13,6 @@ namespace ProductivityTools.Purchase.Contract
         public List<PurchaseItem> Items { get; set; }
         public Dealer Dealer { get; set; }
         public Payment Payment { get; set; }
-        public Return Return { get; set; }
         public List<Delivery> Delivery { get; set; }
 
         public Purchase(string id)
