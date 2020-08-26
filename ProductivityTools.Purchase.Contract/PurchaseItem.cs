@@ -6,6 +6,7 @@ namespace ProductivityTools.Purchase.Contract
 {
     public class PurchaseItem
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public decimal SinglePrice { get; set; }
         public int Amount { get; set; }
@@ -16,5 +17,5 @@ namespace ProductivityTools.Purchase.Contract
                 return SinglePrice * Amount;
             }
         }
-    }
+    }   
 }

@@ -6,7 +6,7 @@ namespace ProductivityTools.Purchase.Contract
 {
     public class Purchase
     {
-        public string PurchaseId { get; set; }
+        public string Id { get; set; }
         public string DeliveryAddress { get; set; }
         public string ReceipmentPhone { get; set; }
         public string Status { get; set; }
@@ -16,9 +16,9 @@ namespace ProductivityTools.Purchase.Contract
         public Return Return { get; set; }
         public List<Delivery> Delivery { get; set; }
 
-        public Purchase(string purchaseId)
+        public Purchase(string id)
         {
-            this.PurchaseId = purchaseId;
+            this.Id = id;
             this.Dealer = new Dealer();
             this.Payment = new Payment();
             this.Delivery = new List<Delivery>();
