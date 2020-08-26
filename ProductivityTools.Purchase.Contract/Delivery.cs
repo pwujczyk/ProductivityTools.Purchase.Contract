@@ -6,8 +6,8 @@ namespace ProductivityTools.Purchase.Contract
 {
     public class Delivery
     {
-        public DateTime DeliveryDate { get; set; }
-        public string DeliveryNumber { get; set; }
-        public string DeliveryStatus { get; set; }
+        public DateTime Date { get; set; }
+        public string Number { get; set; }
+        public string Status { get; set; }
     }
 }
