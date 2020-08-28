@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProductivityTools.Purchase.Contract
+namespace ProductivityTools.Purchases.Contract
 {
     public class Purchase
     {
@@ -10,12 +10,15 @@ namespace ProductivityTools.Purchase.Contract
         public string DeliveryAddress { get; set; }
         public string ReceipmentPhone { get; set; }
         public string Status { get; set; }
+        public string ReturnNumber { get; set; }
         public List<PurchaseItem> Items { get; set; }
         public Dealer Dealer { get; set; }
         public Payment Payment { get; set; }
         public List<Delivery> Delivery { get; set; }
 
-        public Purchase(string id)
+        public Purchase() { }
+
+        public Purchase(string id) : this()
         {
             this.Id = id;
             this.Dealer = new Dealer();

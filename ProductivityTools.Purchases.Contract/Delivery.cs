@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProductivityTools.Purchase.Contract
+namespace ProductivityTools.Purchases.Contract
 {
     public class Delivery
     {
