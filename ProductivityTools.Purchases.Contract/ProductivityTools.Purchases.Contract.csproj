@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.0.25</Version>
+    <Version>0.0.27</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Description>Contract to be used by external applications to the ProductivityTools.Purchase.Api</Description>
     <PackageIcon>ProductivityTools_blue_85px_1.png</PackageIcon>
