@@ -9,5 +9,9 @@ namespace ProductivityTools.Purchases.Contract
         public string Address { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
+
+        public int PurchaseId { get; set; }
+        public Purchase Purchase { get; set; }
+
     }
 }
