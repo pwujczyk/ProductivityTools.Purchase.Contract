@@ -10,7 +10,10 @@ namespace ProductivityTools.Purchases.Contract
         public string Name { get; set; }
         public decimal SinglePrice { get; set; }
         public int Amount { get; set; }
+        public decimal Price { get; set; }
+
         public int? ReturnedAmount { get; set; }
+        public decimal ReturnedPrice { get; set; }
 
         public decimal TotalPrice
         {

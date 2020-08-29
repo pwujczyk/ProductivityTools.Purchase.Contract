@@ -6,7 +6,9 @@ namespace ProductivityTools.Purchases.Contract
 {
     public class Purchase
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
+        public string ShopName { get; set; }
+        public string ExternalSystemId { get; set; }
         public string DeliveryAddress { get; set; }
         public string ReceipmentPhone { get; set; }
         public string Status { get; set; }
@@ -20,7 +22,7 @@ namespace ProductivityTools.Purchases.Contract
 
         public Purchase(string id) : this()
         {
-            this.Id = id;
+            this.ExternalSystemId = id;
             //this.Dealer = new Dealer();
             //this.Payment = new Payment();
             //this.Delivery = new List<Delivery>();
