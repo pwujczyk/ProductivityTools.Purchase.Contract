@@ -10,5 +10,7 @@ namespace ProductivityTools.Purchases.Contract
         public DateTime Date { get; set; }
         public string Number { get; set; }
         public string Status { get; set; }
+
+        public Purchase Purchase { get; set; }
     }
 }

@@ -12,6 +12,5 @@ namespace ProductivityTools.Purchases.Contract
 
         public int PurchaseId { get; set; }
         public Purchase Purchase { get; set; }
-
     }
 }

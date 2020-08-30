@@ -16,7 +16,7 @@ namespace ProductivityTools.Purchases.Contract
         public List<PurchaseItem> Items { get; set; }
         public Dealer Dealer { get; set; }
         public Payment Payment { get; set; }
-        //public List<Delivery> Delivery { get; set; }
+        public List<Delivery> Delivery { get; set; }
 
         public Purchase() { }
 
@@ -26,7 +26,7 @@ namespace ProductivityTools.Purchases.Contract
             this.Dealer = new Dealer();
             this.Payment = new Payment();
             this.Items = new List<PurchaseItem>();
-            //this.Delivery = new List<Delivery>();
+            this.Delivery = new List<Delivery>();
         }
     }
 }
