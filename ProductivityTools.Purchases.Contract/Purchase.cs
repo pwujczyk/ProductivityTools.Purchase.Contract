@@ -13,9 +13,9 @@ namespace ProductivityTools.Purchases.Contract
         public string ReceipmentPhone { get; set; }
         public string Status { get; set; }
         public string ReturnNumber { get; set; }
-        //public List<PurchaseItem> Items { get; set; }
+        public List<PurchaseItem> Items { get; set; }
         public Dealer Dealer { get; set; }
-        //public Payment Payment { get; set; }
+        public Payment Payment { get; set; }
         //public List<Delivery> Delivery { get; set; }
 
         public Purchase() { }
@@ -24,7 +24,8 @@ namespace ProductivityTools.Purchases.Contract
         {
             this.ExternalSystemId = id;
             this.Dealer = new Dealer();
-            //this.Payment = new Payment();
+            this.Payment = new Payment();
+            this.Items = new List<PurchaseItem>();
             //this.Delivery = new List<Delivery>();
         }
     }

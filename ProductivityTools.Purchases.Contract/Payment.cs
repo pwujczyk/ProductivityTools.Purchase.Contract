@@ -11,5 +11,8 @@ namespace ProductivityTools.Purchases.Contract
         public decimal? Amount { get; set; }
         public string Type { get; set; }
         public string Status { get; set; }
+
+        public int PurchaseId { get; set; }
+        public Purchase Purchase { get; set; }
     }
 }

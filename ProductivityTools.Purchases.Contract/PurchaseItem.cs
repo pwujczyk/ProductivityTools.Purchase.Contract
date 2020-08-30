@@ -15,6 +15,8 @@ namespace ProductivityTools.Purchases.Contract
         public int? ReturnedAmount { get; set; }
         public decimal ReturnedPrice { get; set; }
 
+        public Purchase Purchase { get; set; }
+
         public decimal TotalPrice
         {
             get
