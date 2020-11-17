@@ -1,0 +1,18 @@
+@startuml
+
+title Deployment process
+
+Actor Developer
+Control ProjetFile
+Control GitHub
+Entity GitHubActions
+Control Nuget
+
+Developer -> ProjetFile : Change version number
+Developer -> GitHub : Push code
+GitHub -> GitHubActions : Invoke build and publish process
+GitHubActions -> Nuget : Publish module
+
+
+
+@enduml
